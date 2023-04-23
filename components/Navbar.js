@@ -24,7 +24,7 @@ const Menu = () => {
     { id: "about", name: "About", link: "/" },
     { id: "brainchild", name: "Brainchild", link: "/" },
 ];
-useOnClickOutside(ref, () => setIsOpen(!isOpen))
+// useOnClickOutside(ref, () => setIsOpen(!isOpen))
 return (
     <div className="relative">
       <div>
