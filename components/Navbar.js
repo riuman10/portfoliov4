@@ -19,10 +19,10 @@ const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const items = [
-    { id: crypto.randomUUID(), name: "Home", link: "/" },
-    { id: crypto.randomUUID(), name: "Work", link: "/" },
-    { id: crypto.randomUUID(), name: "About", link: "/" },
-    { id: crypto.randomUUID(), name: "Brainchild", link: "/" },
+    { id: "home", name: "Home", link: "/" },
+    { id: "work", name: "Work", link: "/" },
+    { id: "about", name: "About", link: "/" },
+    { id: "brainchild", name: "Brainchild", link: "/" },
 ];
 useOnClickOutside(ref, () => setIsOpen(!isOpen))
 return (
