@@ -13,7 +13,7 @@ const HeroText = () => {
         gsap.to(
           ".text",
           {
-            y : -35,
+            y : -45,
             ease : "power3",
             scrollTrigger: {
               trigger: ".first",
