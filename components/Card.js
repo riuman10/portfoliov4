@@ -11,8 +11,8 @@ const Card = ({
   const [isOpen, setIsOpen] = useState(false);
   return (
       <motion.div
-        layout
-        transition={{ layout: { duration: 1.3, type: "spring" } }}
+        layout = "card"
+        transition={{ layout: { duration: 1 , type : "spring" , bounce : 0.5 } }}
         className="flex flex-col w-full"
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -22,10 +22,10 @@ const Card = ({
           src={image}
           className={`rounded-2xl mb-2 cursor-pointer transition-all hover:translate-y-[-10px] duration-700`}
         />
-        <motion.p layout="position" className="text-lg">
+        <motion.p  className="text-lg">
           {title}
         </motion.p>
-        <motion.p layout="position" className="text-gray-500">
+        <motion.p  className="text-gray-500">
           At the Loopcraft
         </motion.p>
         <AnimatePresence>

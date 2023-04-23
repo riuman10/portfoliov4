@@ -48,7 +48,7 @@ const ProjectsOverview = () => {
             />
             </div> */}
       <div className="flex items-center justify-center">
-        <motion.div layout="position" className="grid lg:grid-cols-2 grid-cols-1 gap-8">
+        <motion.div  className="grid lg:grid-cols-2 grid-cols-1 gap-8 w-fit lg:mx-0 mx-3">
           {data.map((item, i) => (
             <div key={i}>
               <Card 
