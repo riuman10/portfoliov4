@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const ProjectsOverview = () => {
   const data = [
     {
-      id: crypto.randomUUID(),
+      id: "humanlot",
       name: "Humanlot",
       workplace: "Loopcraft",
       overview: "More than just a payroll.",
@@ -14,7 +14,7 @@ const ProjectsOverview = () => {
       overview : "Humanlot is an human resource management system. Created and developed by the Loopcraft. An all-in-one platform to manage your employee data, run payrolls, automate leave flows, provide benefits, & more."
     },
     {
-      id: crypto.randomUUID(),
+      id: "amaya",
       name: "Amaya resorts",
       workplace: "Loopcraft",
       overview: "More than just a payroll.",
@@ -24,7 +24,7 @@ const ProjectsOverview = () => {
     },
 
     {
-      id: crypto.randomUUID(),
+      id: "love",
       name: "Love Sri Lanka",
       workplace: "Loopcraft",
       overview: "More than just a payroll.",
@@ -32,7 +32,7 @@ const ProjectsOverview = () => {
       fallback_image: "/JMfallback.png",
     },
     {
-      id: crypto.randomUUID(),
+      id: "jm",
       name: "Jama'athuge Khabaru",
       workplace: "Loopcraft",
       overview: "More than just a payroll.",
