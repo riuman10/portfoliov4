@@ -11,18 +11,18 @@ const Card = ({
   const [isOpen, setIsOpen] = useState(false);
   return (
       <motion.div
-        layout = "card"
-        transition={{ layout: { duration: 1 , type : "spring" , bounce : 0.5 } }}
+        Layout = "card"
+        transition={{ layout: { duration: 1.5 , type : "spring" , bounce : 0.2 } }}
         className="flex flex-col w-full"
         onClick={() => setIsOpen(!isOpen)}
       >
         <Image
-          width={isOpen ? 400 : 300}
+          width={isOpen ? 350 : 300}
           height={isOpen ? 310 : 300}
           src={image}
           className={`rounded-2xl mb-2 cursor-pointer transition-all hover:translate-y-[-10px] duration-700`}
         />
-        <motion.p  className="text-lg">
+        <motion.p className="text-lg">
           {title}
         </motion.p>
         <motion.p  className="text-gray-500">
@@ -35,8 +35,8 @@ const Card = ({
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4 }}
               exit={{ opacity: 0, y: -20, height: 0 }}
-              layout="pp"
-              className="max-w-[390px]"
+              Layout="inside"
+              className="w-[300px]"
             >
               <p>
                 {overview}
