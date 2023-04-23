@@ -39,8 +39,6 @@ const ProjectsOverview = () => {
       image: "/JM.png",
       fallback_image: "/JMfallback.png",
     },
-
-    // {id : crypto.randomUUID(), name : "Humanlot" , workplace : "Loopcraft" , overview : "More than just a payroll." , image : "/JM.png"},
   ];
   return (
     <div>
