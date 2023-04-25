@@ -22,7 +22,7 @@ const Card = ({
           src={image}
           className={`rounded-2xl mb-2 cursor-pointer transition-all hover:translate-y-[-10px] duration-700`}
         />
-        <motion.p className="text-lg">
+        <motion.p className="text-lg card-text">
           {title}
         </motion.p>
         <motion.p  className="text-gray-500">

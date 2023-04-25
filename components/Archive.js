@@ -21,6 +21,22 @@ const Archive = () => {
       ease: "power3.easeOut",
     });
   }, []);
+
+  useEffect(() => {
+    gsap.to(".card-text", {
+      scrollTrigger: {
+        trigger: ".section",
+        start: "top 90%",
+        end: "bottom bottom",
+        scrub: 1.3,
+      },
+      color : "white",
+      duration : .5,
+      ease: "power3.easeOut",
+    });
+  }, []);
+
+
   return (
     <div className="h-screen section">
       <div className="flex items-center justify-center mt-24 lg:mx-0 mx:8">

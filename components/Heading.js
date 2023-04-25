@@ -17,7 +17,7 @@ const Heading = ({ text = "Heading", color = "black" }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className={`text font-bold lg:text-[6rem] text-[1.3rem] whitespace-nowrap leading-[105px] z-10 opacity-100`}
+        className={`text font-bold lg:text-[6rem] text-[2rem] whitespace-nowrap leading-[105px] z-10 opacity-100`}
         style={{ color: colorLookup[color].code }}
       >
         {text}
