@@ -7,27 +7,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Heading = ({ text = "Heading", color = "black" }) => {
-  // gsap.registerPlugin(ScrollTrigger);
-
-  // useEffect(() => {
-  //     gsap.to(
-  //       ".text",
-  //       {
-  //         y : -35,
-  //         ease : "power3",
-  //         scrollTrigger: {
-  //           trigger: ".first",
-  //           start: "top 20%",
-  //           end: "bottom center",
-  //           scrub: 1.3,
-  //         }
-  //       }
-  //     );
-  //   }, []);
-
   const colorLookup = {
     "black" : { name: "black", code: "black" },
-    "black" : { name: "black", code: "black" },
+    "white" : { name: "black", code: "white" },
   };
   return (
     <div className="relative group first inline-block">
@@ -35,7 +17,7 @@ const Heading = ({ text = "Heading", color = "black" }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="text text-white font-bold text-[6rem] whitespace-nowrap leading-[105px] z-10 opacity-100"
+        className={`text font-bold text-[6rem] whitespace-nowrap leading-[105px] z-10 opacity-100`}
         style={{ color: colorLookup[color].code }}
       >
         {text}

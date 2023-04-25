@@ -1,14 +1,35 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Heading from "./Heading";
+
 
 const Archive = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.to(".main", {
+      scrollTrigger: {
+        trigger: ".section",
+        start: "top 90%",
+        end: "bottom bottom",
+        scrub: 1.3,
+      },
+      backgroundColor: "black",
+      duration : 1,
+      ease: "power3.easeOut",
+    });
+  }, []);
   return (
-    <motion.div
-      initial={{ background: "white", opacity: 0 }}
-      whileInView={{ background: "black", opacity: 1 }}
-      transition={{ duration: 0.8 }}
-      viewport={{ once: false, amount: 0.4 }}
-      className="h-screen"
-    ></motion.div>
+    <div className="h-screen section">
+      <div className="flex items-center justify-center mt-24">
+        <Heading 
+        text = "From the loves"
+        color = "white"
+        />
+      </div>
+    </div>
   );
 };
 
