@@ -23,7 +23,7 @@ const Archive = () => {
   }, []);
   return (
     <div className="h-screen section">
-      <div className="flex items-center justify-center mt-24">
+      <div className="flex items-center justify-center mt-24 lg:mx-0 mx:8">
         <Heading 
         text = "From the archive"
         color = "white"
