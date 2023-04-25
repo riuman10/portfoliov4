@@ -25,7 +25,7 @@ const Archive = () => {
     <div className="h-screen section">
       <div className="flex items-center justify-center mt-24">
         <Heading 
-        text = "From the loves"
+        text = "From the archive"
         color = "white"
         />
       </div>
