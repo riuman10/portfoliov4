@@ -21,7 +21,7 @@ const About = () => {
 
 const Video = () => {
   return (
-    <video width="500" height="500" muted autoPlay loop playsinline>
+    <video width="500" height="500" muted autoPlay loop playsInline>
       <source src="./checkkk.mov" type="video/mp4" />
     </video>
   );
