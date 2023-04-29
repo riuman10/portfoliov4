@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Heading from "./Heading";
-
+import About from "./About";
 
 const Archive = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -38,13 +38,14 @@ const Archive = () => {
 
 
   return (
-    <div className="h-screen section">
+    <div className="min-h-screen section">
       <div className="flex items-center justify-center mt-24 lg:mx-0 mx:8">
         <Heading 
-        text = "From the archive"
+        text = "About"
         color = "white"
         />
       </div>
+      <About />
     </div>
   );
 };

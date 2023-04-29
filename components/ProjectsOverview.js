@@ -28,7 +28,7 @@ const ProjectsOverview = () => {
       name: "Love Sri Lanka",
       workplace: "Loopcraft",
       overview: "More than just a payroll.",
-      image: "/LoveSL.png",
+      image: "/LoveSLL.png",
       fallback_image: "/JMfallback.png",
     },
     {
@@ -41,12 +41,6 @@ const ProjectsOverview = () => {
     },
   ];
   return (
-    <div>
-      {/* <div className="flex items-center justify-center">
-            <Heading 
-            text = {"Projects"}
-            />
-            </div> */}
       <div className="flex items-center justify-center">
         <motion.div Layout = "po" className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:mx-0 mx-3">
           {data.map((item, i) => (
@@ -61,7 +55,6 @@ const ProjectsOverview = () => {
           ))}
         </motion.div>
       </div>
-    </div>
   );
 };
 
