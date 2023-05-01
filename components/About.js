@@ -24,7 +24,7 @@ const About = () => {
     },
     {
       id: "7",
-      name: "Mongo",
+      name: "MongoDB",
     },
     {
       id: "8",
@@ -43,7 +43,7 @@ const About = () => {
           privilege of working at a start-up, a small but very creative team, a
           huge corporation, and a design studio. My main focus these days is
           building accessible, inclusive products and digital experiences at
-          Upstatement for a variety of clients.
+          Loopcraft for a variety of clients.
         </p>
         <p className="mb-8">Here are a few technologies I’ve been working with recently:</p>
         <div className="grid grid-cols-2">

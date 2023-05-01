@@ -16,8 +16,8 @@ const ProjectsOverview = () => {
     {
       id: "amaya",
       name: "Amaya resorts",
-      workplace: "Loopcraft",
-      overview: "More than just a payroll.",
+      workplace: "Sri Lanka",
+      overview: "Resort Industry.",
       image: "/amaya.png",
       fallback_image: "/JMfallback.png",
       overview : "Scattered across the beautiful parts of Kandy, Dambulla and pasikudah."
@@ -26,16 +26,16 @@ const ProjectsOverview = () => {
     {
       id: "love",
       name: "Love Sri Lanka",
-      workplace: "Loopcraft",
-      overview: "More than just a payroll.",
+      workplace: "Sri Lanka",
+      overview: "Sri Lanka promotion",
       image: "/LoveSLL.png",
       fallback_image: "/JMfallback.png",
     },
     {
       id: "jm",
       name: "Jama'athuge Khabaru",
-      workplace: "Loopcraft",
-      overview: "More than just a payroll.",
+      workplace: "National Institute of Education , Maldives",
+      overview: "Educational Magazine.",
       image: "/JM.png",
       fallback_image: "/JMfallback.png",
     },

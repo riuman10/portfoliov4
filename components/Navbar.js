@@ -41,7 +41,7 @@ return (
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
             exit={{ opacity: 0, y: -5, transition: { duration: 0.3 } }}
-            className="border border-gray-100 rounded-lg mt-2 shadow-lg absolute right-0 top-9"
+            className="border border-gray-100 rounded-lg mt-2 shadow-lg absolute right-0 top-9 hidden"
           >
             {items.map((item, i) => (
               <motion.div
