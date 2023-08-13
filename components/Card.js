@@ -27,7 +27,7 @@ const Card = ({
         /> */}
       <div
         style={{
-          width: isOpen ? "370px" : "300px",
+          width: isOpen ? "340px" : "300px",
           height: isOpen ? "310px" : "300px",
           backgroundColor: color,
           backgroundImage: gradient,
