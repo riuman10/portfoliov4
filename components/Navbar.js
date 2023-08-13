@@ -8,8 +8,8 @@ const Navbar = () => {
     const router = useRouter();
   return (
     <div className="flex justify-between items-center container mx-auto py-4 px-6">
-      <p className="font-roboto font-medium" onClick={() => router.push('/')}>Riumaan</p>
-      <Menu />
+      <p className="text-lg font-medium" onClick={() => router.push('/')}>Riumaan</p>
+      {/* <Menu /> */}
     </div>
   );
 };
@@ -24,7 +24,7 @@ const Menu = () => {
     { id: "about", name: "About", link: "/" },
     { id: "brainchild", name: "Brainchild", link: "/" },
 ];
-// useOnClickOutside(ref, () => setIsOpen(!isOpen))
+
 return (
     <div className="relative">
       <div>

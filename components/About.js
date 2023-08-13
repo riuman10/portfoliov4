@@ -33,7 +33,7 @@ const About = () => {
   ];
   return (
     <div className="flex lg:flex-row flex-col items-center justify-center mt-14 lg:mx-8 mx-4">
-      <div className="lg:w-[50%] w-full lg:text-2xl text-xl text-gray-400 font-[500] lg:mb-0 mb-6">
+      <div className="lg:w-[50%] w-full lg:text-2xl text-xl text-gray-300 font-[500] lg:mb-0 mb-6">
         <p className="leading-9">
           Hello! Riumaan here and I enjoy creating things that live on the
           internet. My interest in web development started back in 2015 when I

@@ -16,7 +16,7 @@ const Archive = () => {
         end: "bottom bottom",
         scrub: 1.3,
       },
-      backgroundColor: "black",
+      backgroundColor: "#232023",
       duration : 1,
       ease: "power3.easeOut",
     });
@@ -31,7 +31,7 @@ const Archive = () => {
         scrub: 1.3,
       },
       color : "white",
-      duration : .5,
+      duration : .2,
       ease: "power3.easeOut",
     });
   }, []);
