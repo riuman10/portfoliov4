@@ -9,7 +9,7 @@ const Card = ({
   overview = "",
   workplace = "",
   gradient = "",
-  color = ""
+  color = "",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -34,7 +34,9 @@ const Card = ({
         }}
         className={`relative rounded-2xl mb-2 cursor-pointer transition-all hover:translate-y-[-10px] duration-700 bg-gradient-tr`}
       >
-        <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl text-white whitespace-nowrap">{title}</p>
+        <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-white whitespace-nowrap">
+          {title}.
+        </p>
       </div>
       <motion.p className="text-lg card-text font-medium">{title}</motion.p>
       <motion.p className="text-gray-500">At {workplace}</motion.p>

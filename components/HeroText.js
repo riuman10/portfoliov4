@@ -11,7 +11,7 @@ const HeroText = () => {
 
   useEffect(() => {
     gsap.to(".text", {
-      y: -75,
+      y: -55,
       ease: "power4.easeOut",
       scrollTrigger: {
         trigger: ".first",
@@ -22,6 +22,7 @@ const HeroText = () => {
       },
     });
   }, []);
+
   return (
     <div className="relative group first">
       <motion.p

@@ -1,5 +1,3 @@
-import HeartFooter from "./icons/HeartFooter";
-import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
