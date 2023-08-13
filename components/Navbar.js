@@ -8,7 +8,7 @@ const Navbar = () => {
     const router = useRouter();
   return (
     <div className="flex justify-between items-center container mx-auto py-4 px-6">
-      <p className="text-lg font-medium" onClick={() => router.push('/')}>Riumaan</p>
+      <p className="text-xl font-medium" onClick={() => router.push('/')}>Riumaan</p>
       {/* <Menu /> */}
     </div>
   );
