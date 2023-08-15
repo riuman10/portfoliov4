@@ -39,7 +39,7 @@ const Archive = () => {
 
   return (
     <div className="min-h-screen section">
-      <div className="flex items-center justify-center mt-24 lg:mx-0 mx:8">
+      <div className="flex items-center justify-center mt-36 lg:mx-0 mx:8">
         <Heading 
         text = "About"
         color = "white"
