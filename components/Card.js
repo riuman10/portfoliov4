@@ -19,22 +19,14 @@ const Card = ({
       className="flex flex-col w-full"
       onClick={() => setIsOpen(!isOpen)}
     >
-      {/* <Image
+      <div className="relative">
+        <Image
           width={isOpen ? 350 : 300}
           height={isOpen ? 310 : 300}
           src={image}
           className={`rounded-2xl mb-2 cursor-pointer transition-all hover:translate-y-[-10px] duration-700`}
-        /> */}
-      <div
-        style={{
-          width: isOpen ? "340px" : "300px",
-          height: isOpen ? "310px" : "300px",
-          backgroundColor: color,
-          backgroundImage: gradient,
-        }}
-        className={`relative rounded-2xl mb-2 cursor-pointer transition-all hover:translate-y-[-10px] duration-700 bg-gradient-tr`}
-      >
-        <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-white whitespace-nowrap">
+        />
+        <p className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-white whitespace-nowrap">
           {title}.
         </p>
       </div>
