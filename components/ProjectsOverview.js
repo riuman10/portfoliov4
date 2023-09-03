@@ -36,8 +36,8 @@ const ProjectsOverview = () => {
       name: "Jama'athuge Khabaru",
       workplace: "National Institute of Education , Maldives",
       overview: "Educational Magazine.",
-      text_color: "#9999ff",
-      gradient: `linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)`,
+      text_color: "#fff",
+      gradient: `linear-gradient(to right, #243949 0%, #517fa4 100%)`,
     },
   ];
   return (
