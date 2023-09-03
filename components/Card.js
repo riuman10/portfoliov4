@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Card = ({
@@ -9,24 +8,34 @@ const Card = ({
   overview = "",
   workplace = "",
   gradient = "",
-  color = "",
+  text_color = ""
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <motion.div
       Layout="card"
-      transition={{ layout: { duration: 1.5, type: "spring", bounce: 0.2 } }}
+      transition={{ layout: { duration: 1, type: "spring", bounce: 0.3 } }}
       className="flex flex-col w-full"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="relative">
-        <Image
-          width={isOpen ? 350 : 300}
-          height={isOpen ? 310 : 300}
-          src={image}
+        <div
+          // width={isOpen ? 350 : 300}
+          // height={isOpen ? 310 : 300}
+          // src={image}
           className={`rounded-2xl mb-2 cursor-pointer transition-all hover:translate-y-[-10px] duration-700`}
+          style = {{
+            backgroundImage : `${gradient}`,
+            width : isOpen ? 350 : 300,
+            height : isOpen ? 310 : 300
+          }}
         />
-        <p className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-white whitespace-nowrap">
+        <p 
+        className="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-bold whitespace-nowrap"
+        style = {{
+          color : `${text_color}`
+        }}
+        >
           {title}.
         </p>
       </div>
