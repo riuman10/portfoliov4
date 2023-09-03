@@ -11,14 +11,14 @@ const HeroText = () => {
 
   useEffect(() => {
     gsap.to(".text", {
-      y: -55,
+      y: -35,
       ease: "power4.easeOut",
       scrollTrigger: {
         trigger: ".first",
-        start: "top 30%",
+        start: "top 20%",
         end: "bottom center",
         markers: false,
-        scrub: 2,
+        scrub: 3,
       },
     });
   }, []);
