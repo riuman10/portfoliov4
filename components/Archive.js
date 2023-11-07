@@ -16,7 +16,7 @@ const Archive = () => {
         end: "bottom bottom",
         scrub: 1.3,
       },
-      backgroundColor: "#232023",
+      backgroundColor: "#000000",
       duration : 1,
       ease: "power3.easeOut",
     });

@@ -11,10 +11,12 @@ const About = () => {
     {
       id: "3",
       name: "React Native",
-    },{
+    },
+    {
       id: "4",
       name: "Framer Motion",
-    },{
+    },
+    {
       id: "5",
       name: "Node.js",
     },
@@ -29,29 +31,32 @@ const About = () => {
     {
       id: "8",
       name: "Supabase",
-    }
+    },
   ];
   return (
     <div className="flex lg:flex-row flex-col items-center justify-center mt-14 lg:mx-8 mx-4">
       <div className="lg:w-[50%] w-full lg:text-2xl text-xl text-gray-300 font-[500] lg:mb-0 mb-6">
         <p className="text-sm lg:text-lg">
-          Hello! Riumaan here and I enjoy creating things that live on the
-          internet. My interest in web development started back in 2015 when I
-          decided to try make the computer say hello — turns out hacking
-          together a very dumb but insanely great product taught me a lot about
-          this whole new world! Fast-forward to today, and I’ve had the
-          privilege of working at a start-up, a small but very creative team, a
-          huge corporation, and a design studio. My main focus these days is
-          building accessible, inclusive products and digital experiences at
-          Loopcraft for a variety of clients.
+          Hello! I'm Riumaan, and I have a passion for crafting digital wonders
+          on the World Wide Web. My journey into the realm of web development
+          commenced in 2015 when I embarked on the mission to make the computer
+          utter its first "hello." As I pieced together a seemingly simple yet
+          remarkably impactful creation, I unearthed a trove of knowledge about
+          this dynamic universe. Fast-forward to the present day, and my odyssey
+          has led me through diverse landscapes, from dynamic startups and
+          ingenious small teams to corporate giants and innovative design
+          studios. Today, my primary mission revolves around the creation of
+          universally accessible and inclusive digital products and experiences
+          at a Maldivian company for an array of discerning clients.
         </p>
-        <p className="mb-8 text-sm lg:text-lg">Here are a few technologies I’ve been working with recently:</p>
+        <p className="mb-8 text-sm lg:text-lg">
+          Here's a glimpse of the technologies I've been actively engaged with
+          recently:
+        </p>
         <div className="grid grid-cols-2">
-        {
-          techs.map((item) => (
+          {techs.map((item) => (
             <p className="mb-1 text-base">{item.name}</p>
-          ))
-        }
+          ))}
         </div>
       </div>
       <Video />
